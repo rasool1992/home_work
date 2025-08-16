@@ -1,0 +1,7 @@
+Q2: 
+Describe the difference between var, dynamic, and explicitly typed variables in Dart.
+
+Answer:
+dynamic is data type while the var is a keyword, in dynamic data type we could change the value to another type or it may change during execution.
+While with explicitly typed variables the compiler doesn't need to infer the type.
+
