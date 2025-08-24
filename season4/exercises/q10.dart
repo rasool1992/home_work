@@ -1,23 +1,12 @@
 // Question 10.
-// a) Demonstrate var vs dynamic: assign dynamic value first as an int, then as a String, printing after each.
-// b) Create var greeting = 'Hi'; change it to another String and print.
-// c) Declare num pi = 3.14159; print pi.toInt() and pi.toStringAsFixed(3).
-
+// Create a Dart program that builds a map of country codes. Print the value for 'EG', add a new entry 'QA': 'Qatar', print the total length, and check if 'JO' exists—if not, print 'Jordan missing'.
 void main() {
-  // a) Demonstrate var vs dynamic: assign dynamic value first as an int, then as a String, printing after each.
-  // Answer var is a keyword not a data type while the dynamic is a data type the dynamic data type may change during excution or in the code.
-  dynamic test = 'AAA';
-  print(test);
-  test = 10;
-  print(test);
-
-  // b) Create var greeting = 'Hi'; change it to another String and print.
-  var greeting = 'Hi';
-  greeting = "another text";
-  print(greeting);
-
-  // c) Declare num pi = 3.14159; print pi.toInt() and pi.toStringAsFixed(3).
-  num pi = 3.14159;
-  print(pi.toInt());
-  print(pi.toStringAsFixed(3));
+  Map<String, String> countryCodes = {'EG': 'egypt'};
+  countryCodes['QA'] = 'qatar';
+  print('total len: ${countryCodes.length}');
+  if (countryCodes['JO'] == null) {
+    print('Jordan missing');
+  } else {
+    print('Found');
+  }
 }
